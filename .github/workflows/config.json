@@ -1,0 +1,28 @@
+{
+  "default_kernel":["R", "python"],
+  "settings":{
+      "max_participants_in_group": 1,
+      "need_to_check_impersonality": false,
+      "points":[
+        "Цель работы",
+        "Основные теоретические положения",
+        "Постановка задачи",
+        "Выполнение работы",
+        "Выводы"
+        ]
+  },
+  "works":{
+    "task1": {
+      "deadline":"2023-03-25",
+      "kernel":["R", "python", "octave", "sage"]
+    },
+    "task2": {
+      "deadline":"2023-04-22",
+      "kernel":["R", "python", "octave", "sage"]
+    },
+    "task3": {
+      "deadline":"2023-05-20",
+      "kernel":["R", "python", "octave", "sage"]
+    }
+  }
+}
