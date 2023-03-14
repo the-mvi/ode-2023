@@ -1,10 +1,10 @@
- name: IPYNB_PARSER
+  name: IPYNB_PARSER
 
- on:
+  on:
     pull_request:
       branches: [ master, main ]
       types: [opened, synchronize, reopened, edited]
- env:
+  env:
     ERRORS: ''
     WARNINGS: ''
     INFO: ''
@@ -36,7 +36,7 @@
           if not value:
             return ''
           return env_name+'='+value+'\n'
- jobs:
+  jobs:
     check_ipynb:
       runs-on: ubuntu-latest
       steps:
@@ -426,4 +426,3 @@
               ${{env.INFO}}
               **Детали**: 
               ${{env.ERRORS}}
-              
